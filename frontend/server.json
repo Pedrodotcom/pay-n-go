@@ -1,0 +1,72 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "description": "Bis Ao Leite Cx C/20 126g Lacta",
+      "price": 5.15,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/19602/9/19602908_1GG.jpg",
+      "gtin": 7896019603430
+    },
+    {
+      "id": 2,
+      "description": "Amendoim Brasil Tipo Japonês Salgado Agtal Pacote 155 G",
+      "price": 2.99,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img2/104905/0/104905076_1SZ.jpg",
+      "gtin": 7896261400856
+    },
+    {
+      "id": 3,
+      "description": "Bala de Gelatina e Marshmallows Dentadura 100g - Fini",
+      "price": 3.99,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img7/01/00/item/6889/6/6889655_1GG.jpg",
+      "gtin": 7898279790417
+    },
+    {
+      "id": 4,
+      "description": "Cheetos Onda 150/160g Elma Chips",
+      "price": 6.99,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img3/172618/1/172618122_1SZ.jpg",
+      "gtin": 7892840233846
+    },
+    {
+      "id": 5,
+      "description": "COCA COLA PET 600ML",
+      "price": 4.99,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/73867/2/73867268_1SZ.jpg",
+      "gtin": 7894900011609
+    },
+    {
+      "id": 6,
+      "description": "COCA COLA LATA 350ML",
+      "price": 3.49,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/1254215/5/1254215597_1SZ.jpg",
+      "gtin": 7894900709841
+    }
+  ]
+}

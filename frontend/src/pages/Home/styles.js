@@ -1,11 +1,12 @@
 import styled from 'styled-components/native';
+import { TouchableOpacity } from 'react-native'
 
 export const Container = styled.View`
   flex: 1;
   background: #efefef;
 `;
 
-export const Content = styled.View`
+export const Content = styled(TouchableOpacity)`
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -30,7 +31,7 @@ export const Image = styled.Image`
 
 export const Detail = styled.View`
   flex: 1;
-  padding: 5px;
+  /* padding: 5px; */
   flex-direction: column;
 `;
 
@@ -45,7 +46,27 @@ export const Price = styled.Text`
   margin-top: 30px;
 `;
 
-export const ButtonContainer = styled.View``;
+export const ButtonContainer = styled.TouchableOpacity`
+  width: 100%;
+  height: 30px;
+  background: #E60014;
+  margin-top: 30px;
+
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ButtonContainerText = styled.Text`
+  background-color: #efefef;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  
+`;
 
 
 

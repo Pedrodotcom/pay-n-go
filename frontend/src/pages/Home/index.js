@@ -1,24 +1,61 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { FlatList } from 'react-native'
+import api from '../../services/api';
 
-import { Container, Content, Product, Image, Detail, Description, Price, ButtonContainer } from './styles';
+import { Container, Content, Product, Image, Detail, Description, Price, ButtonContainer, ButtonContainerText } from './styles';
 
 import Header from '../../components/Header'
 
-export default function Home() {
+export default function Home({ navigation }) {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function loadProducts(){
+      const response = await api.get('products');
+
+      setProducts(response.data);
+
+      console.log(response.data);
+      
+    }
+
+    loadProducts();
+  }, [])
+
   return (  
     <>  
     <Header />
     <Container>
-      <Content>
-        <Product>
-          <Image source={{ uri: "https://images-americanas.b2w.io/produtos/01/00/item/19581/7/19581722_1GG.jpg" }} />
-        </Product>
-        <Detail>
-          <Description>Bis ao leite cx c/20 126G Lacta</Description>
-          <Price>R$ 5,15</Price>
-          <ButtonContainer></ButtonContainer>
-        </Detail>
-      </Content>
+    <FlatList 
+      data={products}
+      keyExtractor={product => product.id}
+      // keyExtractor={(product) => product.id}
+      renderItem={({ item: product }) => (
+        <Content
+          onPress={() => {
+            navigation.navigate("ProductDetail", {
+              product: product
+            });
+          }}
+        >
+          <Product>
+            <Image source={{ uri: product.image }} />
+          </Product>
+          <Detail>
+            <Description>{product.description}</Description>
+            <Price>
+              { Intl.NumberFormat("pt-BR", { 
+                style: "currency", 
+                currency: "BRL" 
+              }).format(product.price)}
+            </Price>
+            <ButtonContainer>
+              <ButtonContainerText>ver online</ButtonContainerText>
+            </ButtonContainer>
+          </Detail>
+        </Content>
+      )}
+    />
     </Container>
     </>
   );
