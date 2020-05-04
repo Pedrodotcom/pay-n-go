@@ -1,30 +1,4 @@
 {
-  "stock": [
-    {
-      "id": 1,
-      "amount": 3
-    },
-    {
-      "id": 2,
-      "amount": 5
-    },
-    {
-      "id": 3,
-      "amount": 2
-    },
-    {
-      "id": 4,
-      "amount": 1
-    },
-    {
-      "id": 5,
-      "amount": 5
-    },
-    {
-      "id": 6,
-      "amount": 10
-    }
-  ],
   "products": [
     {
       "id": 1,
@@ -64,6 +38,32 @@
     {
       "id": 6,
       "description": "COCA COLA LATA 350ML",
+      "price": 3.49,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/1254215/5/1254215597_1SZ.jpg",
+      "gtin": 7894900709841
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "description": "Bis Ao Leite Cx C/20 126g Lacta",
+      "amount": 1,
+      "price": 5.15,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/19602/9/19602908_1GG.jpg",
+      "gtin": 7896019603430
+    },
+    {
+      "id": 4,
+      "description": "Cheetos Onda 150/160g Elma Chips",
+      "amount": 2,
+      "price": 6.99,
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img3/172618/1/172618122_1SZ.jpg",
+      "gtin": 7892840233846
+    },
+    {
+      "id": 6,
+      "description": "COCA COLA LATA 350ML",
+      "amount": 3,
       "price": 3.49,
       "image": "https://images-americanas.b2w.io/produtos/01/00/img/1254215/5/1254215597_1SZ.jpg",
       "gtin": 7894900709841

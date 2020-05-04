@@ -15,7 +15,7 @@ export default function Home({ navigation }) {
 
       setProducts(response.data);
 
-      console.log(response.data);
+      // console.log(response.data);
       
     }
 
@@ -28,7 +28,7 @@ export default function Home({ navigation }) {
     <Container>
     <FlatList 
       data={products}
-      keyExtractor={product => product.id}
+      keyExtractor={product => String(product.id)}
       // keyExtractor={(product) => product.id}
       renderItem={({ item: product }) => (
         <Content
